@@ -17,19 +17,20 @@
             <div class="contenedor__areaencript">
                 <!-- <textarea name="txt_encript" col="10" row="20" id="texto_escript" placeholder="Ingresa el texto aquí"></textarea> -->
                 <input type="text" class="text__encript"  name="txt_encript" id="texto_escript" placeholder="Ingresa el texto aquí">
-            </div>
-            <div class="condiciones">
-                <p><img class="logo__mini" src="assets/logo_alerta.png" alt="">Solo letras minúsculas y sin acento</p>
-            </div>
-            <div class="buttons">
-                <button type="button" onclick="encriptarTexto();" id="btn_encriptado"   class="presentacion_enlaces_links1">Encriptar</button>
-                <button type="button" onclick="desencriptarTexto();" id="btn_desencriptar" class="presentacion_enlaces_links2"  disabled>Desencriptar</button> 
-            </div>      
+                <div class="condiciones">
+                    <p><img class="logo__mini" src="assets/logo_alerta.png" alt="">Solo letras minúsculas y sin acento</p>
+                </div>
+                <div class="buttons">
+                    <button type="button" onclick="encriptarTexto();" id="btn_encriptado"   class="btn_encriptado">Encriptar</button>
+                    <button type="button" onclick="desencriptarTexto();" id="btn_desencriptar" class="btn_desencriptar"  disabled>Desencriptar</button> 
+                </div>
+            </div> 
             <div class="contenedor__encript">
                 <div class="mensaje__encript" id="mensaje__encript">
                     <h3 id="msj__titulo">Ningún mensaje fue encontrado</h3>
                     <p id="msj__aviso">Ingrese el texto que desea encriptar o desencriptar</p>
-                    <textarea class="msj__texto" name="txt_mensaje" id="txt_mensaje"></textarea>
+                    <!--<textarea class="msj__texto" name="txt_mensaje" id="txt_mensaje"></textarea>-->
+                    <input type="text" class="msj__texto"  name="txt_mensaje" id="txt_mensaje">
                 </div>
             </div>
         </div>

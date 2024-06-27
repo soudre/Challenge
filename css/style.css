@@ -59,8 +59,90 @@
 }
 
 .condiciones p{
+    flex: none;
     font-family: var(--fuente-inter);
     font-size: 12px;
     line-height: 150%;
-    color: var(--color-base);
+    color: var(--color-hover);
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    align-items:flex-start;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+}
+
+.btn_encriptado{
+    background-color: var(--color-primario);
+    font-family: var(--fuente-inter);
+    font-size: 18px;
+    text-align: center;
+    color: var(--color-secundario);
+    border-color: var(--color-primario);
+    border-radius: 24px;
+    padding: 2%;
+    width: 25%;
+    gap: 8px;
+
+}
+.btn_encriptado:hover{
+    background-color: #154885;
+}
+
+.btn_desencriptar{
+    background-color: var(--color-cinco);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: var(--fuente-inter);
+    font-size: 18px;
+    text-align: center;
+    color: var(--color-primario);
+    border-color: var(--color-primario);
+    border-radius: 24px;
+    padding: 2%;
+    width: 25%;
+    gap: 8px;
+}
+
+.btn_desencriptar:hover{
+    background-color: #bfc8d1;
+}
+
+.contenedor__encript{
+    background-color: var(--color-secundario);
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top:5%
+}
+
+.mensaje__encript{
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    padding: 1%;
+    gap:16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    top:60%;  
+}
+.mensaje__encript h3{
+    font-family: var(--fuente-inter);
+    color: var(--color-hover);
+    width: 60%;
+    font-size: 24px;
+    text-align: center;
 }
