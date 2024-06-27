@@ -1,5 +1,6 @@
-function encriptarTaxto(){
-    let texto = document.getElementById("texto_escript").value;
+function encriptarTexto(){
+
+    let texto = document.getElementById("texto_encript").value;
     let titulo_mensaje = document.getElementById("msj__titulo");
     let parrafo = document.getElementById("msj__aviso");
 
@@ -18,7 +19,7 @@ function encriptarTaxto(){
         .replace(/u/gi, "ufat");
     
     if(texto.length != 0){
-        texto = texto_encriptado;
+        document.getElementById("texto_encript").value= texto_encriptado;
         titulo_mensaje.textContent = "Encriptación exitosa";
         parrafo.textContent = "";
     }else{
