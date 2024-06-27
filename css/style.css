@@ -156,7 +156,7 @@
 }
 
 /* **** Media Query Responsivo **** */
-@media(max-width:57.5em){
+@media(max-width:900px){
     .contenedor{
         display: flex;
         flex-direction: row;
@@ -178,4 +178,37 @@
         left: 10%;
         top: 60%;
     }
+    .buttons{
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+
+    .btn_encriptado,.btn_desencriptar{
+        width: 50%;
+    }
+
+    .btn_encriptado:hover,.btn_desencriptar:hover{
+        width: 48%;
+        padding: 1%;
+    }
+
+    .contenedor__encript{
+        width: 80%;
+        height: 20%;
+        left: 10%;
+        top: 80%;
+    }
+    .mensaje__encript{
+        width: 100%;
+        top: 5%;
+    }
+
+    .contenedor__encript img{
+        display: none;
+        top: 0%;
+        visibility: hidden;
+    }
+
+
 }
