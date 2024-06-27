@@ -127,6 +127,14 @@
     top:5%
 }
 
+.contenedor__encript img{
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    top:20%;
+
+}
+
 .mensaje__encript{
     display: flex;
     flex-direction:column;
@@ -145,4 +153,29 @@
     width: 60%;
     font-size: 24px;
     text-align: center;
+}
+
+/* **** Media Query Responsivo **** */
+@media(max-width:57.5em){
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contenedor__areaencript{
+        width: 100%;
+    }
+    
+    .text__encript{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top:5%
+    }
+
+    .condiciones{
+        width: 80%;
+        left: 10%;
+        top: 60%;
+    }
 }
