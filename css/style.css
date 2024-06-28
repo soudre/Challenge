@@ -71,6 +71,7 @@
     flex-direction: row;
     padding: 1%;
     align-items:flex-start;
+    gap: 8px;
     position: absolute;
     width: 80%;
     left: 12%;
@@ -115,6 +116,21 @@
     background-color: #bfc8d1;
 }
 
+.btn_copiar{
+    background-color: var(--color-base);
+    border-radius: 24px;
+    border-color: var(--color-primario);
+    padding: 2%;
+    width: 50%;
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: var(--fuente-inter);
+    font-size: 18px;
+}
+
 .contenedor__encript{
     background-color: var(--color-secundario);
     border-radius: 32px;
@@ -153,6 +169,23 @@
     width: 60%;
     font-size: 24px;
     text-align: center;
+}
+
+.msj__texto{
+    background-color: transparent;
+    border-radius: 24px;
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height: 480px;
+    left: 0;
+    top: 0;
+    border: none;
+    resize: none;
+    font-family: var(--fuente-inter);
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--color-hover);
 }
 
 /* **** Media Query Responsivo **** */

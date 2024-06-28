@@ -3,6 +3,7 @@ function encriptarTexto(){
     let texto = document.getElementById("texto_encript").value;
     let titulo_mensaje = document.getElementById("msj__titulo");
     let parrafo = document.getElementById("msj__aviso");
+    let parrafo_copia = document.getElementById("txt_mensaje");
 
     /* La letra "e" es convertida para "enter"
        La letra "i" es convertida para "imes"
@@ -20,6 +21,7 @@ function encriptarTexto(){
     
     if(texto.length != 0){
         document.getElementById("texto_encript").value = texto_encriptado;
+        document.getElementById("texto_encript").value = parrafo_copia;
         titulo_mensaje.textContent = "Encriptación exitosa";
         parrafo.textContent = "";
     }else{
